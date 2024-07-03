@@ -1,6 +1,6 @@
 { mkDerivation, base, directory, lib, parsec, process }:
 mkDerivation {
-  pname = "bbshop-trimmer";
+  pname = "clipTrimmer";
   version = "0.1.0.0";
   src = ./.;
   isLibrary = false;

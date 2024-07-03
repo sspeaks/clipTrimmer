@@ -9,7 +9,7 @@ let
         super.mkDerivation (args // { enableLibraryProfiling = true; });
     };
   };
-  p = profiledHaskellPackages.callPackage ./bbshop-trimmer.nix { };
+  p = profiledHaskellPackages.callPackage ./clipTrimmer.nix { };
 
   shell = haskellPackages.shellFor {
     packages = ps: [ p ];
