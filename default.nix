@@ -1,3 +1,3 @@
 { pkgs ? import <nixpkgs> { } }: {
-  bbshop-trimmer = pkgs.haskellPackages.callPackage ./clipTrimmer.nix { };
+  clipTrimmer = pkgs.haskellPackages.callPackage ./clipTrimmer.nix { };
 }
