@@ -165,7 +165,7 @@ main = do
     (Right reses) -> forM_ reses $ \res -> do
       mProcs  <- getRunTrimProcesses res
       -- let mProcs = []
-      mCProcs <- getRunTrimProcessesCompressed res
+      mCProcs <- return []-- getRunTrimProcessesCompressed res
       let mProcsFinal = mProcs ++ mCProcs
       print res
       mapM_ runProcessAndWait mProcsFinal
