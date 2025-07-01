@@ -5,8 +5,7 @@ mkDerivation {
   src = ./.;
   isLibrary = false;
   isExecutable = true;
-  executableHaskellDepends = [ base directory parsec process ];
-  executableSystemDepends = [ pkgs.ffmpeg-full ];
+  executableHaskellDepends = [ base directory parsec process pkgs.ffmpeg-full ];
   license = "unknown";
   hydraPlatforms = lib.platforms.none;
 }
