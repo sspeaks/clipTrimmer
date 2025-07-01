@@ -21,4 +21,5 @@ let
       cabal-install
     ]);
   };
-in shell
+in
+shell
